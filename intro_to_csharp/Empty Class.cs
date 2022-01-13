@@ -89,7 +89,10 @@ namespace intro_to_csharp
             Console.WriteLine("The Chef makes Salad.");
         }
 
-        public void MakeSpecialDish()
+        // For a subclass to change an superclass attribute in an object:
+        // Keyword "virtual" must be included in the superclass attribute
+        // And Keyword "override" msut be inputted in the target subclass attribute
+        public virtual void MakeSpecialDish()
         {
             Console.WriteLine("The Chef makes BBQ Ribs.");
         }
@@ -99,7 +102,11 @@ namespace intro_to_csharp
     // Have the "ItalianChef" class inherit attributes from the "chef" class
     class ItalianChef : chef
     {
-       
+        // To 
+        public override void MakeSpecialDish()
+        {
+            Console.WriteLine("The Chef makes Chicken Parmesean.");
+        }
     }
 
 }

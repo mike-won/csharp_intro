@@ -458,7 +458,7 @@ namespace intro_to_csharp
 
             // Don't lose your mind, the call in the second arg must reference an object
             ItalianChef italianChef = new ItalianChef();
-            italianChef.MakeChicken();
+            italianChef.MakeSpecialDish();
 
             Console.ReadLine();
 
